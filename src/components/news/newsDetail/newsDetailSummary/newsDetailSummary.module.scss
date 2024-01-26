@@ -1,0 +1,203 @@
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+  padding: 10px;
+
+  .summary {
+    width: 902px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+
+    @media (max-width: 1080px) {
+      flex-direction: column-reverse;
+      width: 700px;
+    }
+
+    @media (max-width: 768px) {
+      width: 500px;
+    }
+
+    @media (max-width: 528px) {
+      width: auto;
+    }
+
+    .date {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-tungsten);
+
+      .mobile-social-links {
+        display: flex;
+
+        .link-content {
+          position: relative;
+          width: 40px;
+          height: 40px;
+          cursor: pointer;
+        }
+      }
+
+      p {
+        color: rgba(255, 190, 23, 0.8);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 373;
+        line-height: 20px; /* 100% */
+        letter-spacing: 0.2px;
+      }
+
+      span {
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 350;
+        line-height: 20px; /* 100% */
+        letter-spacing: 0.2px;
+      }
+
+      .calendar {
+        position: relative;
+        display: flex;
+        margin-top: 2px;
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    .summary-content {
+      color: #fff;
+      font-family: var(--font-montserrat);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22.4px; /* 160% */
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .detail {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .avatar {
+      position: relative;
+      width: 25px;
+      height: 25px;
+    }
+
+    p {
+      color: white;
+      font-family: var(--font-montserrat);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 19.2px; /* 137.143% */
+      letter-spacing: 0.5px;
+    }
+
+    span {
+      color: #868686;
+      font-family: var(--font-montserrat);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 19.2px; /* 137.143% */
+      letter-spacing: 0.5px;
+    }
+
+    .title {
+      display: flex;
+      gap: 3px;
+
+      span {
+        color: rgba(255, 190, 23, 0.8);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 373;
+        line-height: 20px; /* 100% */
+        letter-spacing: 0.2px;
+        font-family: var(--font-tungsten);
+      }
+
+      p {
+        color: rgba(255, 255, 255, 0.8);
+        font-family: var(--font-tungsten);
+        text-transform: uppercase;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 373;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+      }
+    }
+  }
+  .links {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+
+    @media (max-width: 1080px) {
+      display: none;
+    }
+
+    p {
+      color: white;
+      font-family: var(--font-din-alternate);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px; /* 200% */
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .target {
+      display: flex;
+      gap: 8px;
+
+      .target-icon {
+        position: relative;
+        width: 10px;
+        height: 10px;
+      }
+
+      p {
+        color: var(--color-primary-50);
+        font-family: var(--font-tungsten);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 373;
+        line-height: 13.8px; /* 69% */
+        text-transform: uppercase;
+      }
+    }
+    span {
+      text-align: center;
+      color: rgba(255, 190, 23, 0.75);
+      font-family: var(--font-tungsten);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 350;
+      line-height: 13.8px; /* 69% */
+      text-transform: uppercase;
+    }
+
+    .social-links {
+      display: flex;
+
+      .link-content {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+      }
+    }
+  }
+}

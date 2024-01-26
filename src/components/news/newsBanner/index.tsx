@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const NewsBanner: FC = () => {
   return (
-    <section className={styles["news-banner"]}>
+    <div className={styles["news-banner"]}>
       <div className={styles["banner-bg"]}>
         <Image src="/images/bg-news.jpg" alt="News Banner Bg" fill />
       </div>
@@ -15,7 +15,7 @@ const NewsBanner: FC = () => {
           <p>KEEP UP WITH THE LATEST NEWS & UPDATES IN GUNZ!</p>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
